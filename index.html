@@ -1,10 +1,34 @@
 <style>
-  body {
+  .background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    display: block;
     background-image: url('https://cdn.rawgit.com/Kore-Development/kore-development.github.io/master/images/bg.jpg');
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: white;
+    width: 1200px;
+    height: 800px;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  .content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 </style>
 <center>
-  <br/><h1>Coming soon!</h1>
+  <div class="background-image"></div>
+  <div class="content">
+    <br/><h1>Coming soon!</h1>
+  </div>
 </center>
